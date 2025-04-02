@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Video Background</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<video id="video-background" autoplay muted loop>
+    <source src="./img/hero-video.mp4  " type="video/mp4">
+    <!-- Add other video sources here if needed -->
+    Your browser does not support HTML5 video.
+</video>
+
+<div id="content">
+    <!-- Your content here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is some content on top of the video background.</p>
+</div>
+<div class="content-wrapper rounded mx-auto">
+   <div data-aos="fade-down" class="border rounded p-2 mb-4" id="about">
+     <center>
+       <div class="heading col-md-4 rounded">
+         <h3 class="p-2 m-4 d-flex justify-content-center">Namma Mysuru</h3>
+       </div>
+     </center>
+     <p>
+       Mysuru, also known as Mysore, is a historic city in the southern state
+       of Karnataka, India. Renowned for its rich cultural heritage, palaces,
+       and festivities, Mysuru was once the capital of the Kingdom of Mysore,
+       ruled by the Wadiyar dynasty. It is famous for its grand Mysore
+       Palace, a magnificent architectural marvel that attracts tourists from
+       around the world.
+       <br /><br />
+       In addition to its palaces, Mysuru is known for its vibrant Dasara
+       festival, celebrated with grandeur and pomp, featuring processions,
+       cultural performances, and illuminated streets. The city is also a
+       center for traditional crafts such as silk weaving and sandalwood
+       carving.
+       <br /><br />
+       Mysuru boasts several other attractions including the Chamundi Hill
+       with its ancient Chamundeshwari Temple, the tranquil Brindavan
+       Gardens, and the historic St. Philomena's Cathedral.
+       <br /><br />
+       Today, Mysuru is a bustling city with a blend of tradition and
+       modernity, offering visitors a glimpse into its rich cultural past
+       while embracing the conveniences of contemporary life.
+     </p>
+   </div>
+   <div data-aos="fade-down" class="border rounded p-2 mb-4" id="reach">
+     <center>
+       <div class="heading col-md-4 rounded">
+         <h3 class="p-2 m-4 d-flex justify-content-center">
+           How to reach ?
+         </h3>
+       </div>
+     </center>
+     <p>
+       Mysore is one of the more well-connected cities in Karnataka and is
+       accessible through road, rail and air. Although Mysore has its own
+       airport, it is not fully functional and doesn't connect to all major
+       cities. So tourists can access Mysore through the Bangalore airport
+       (170km). Getting on a train to the Mysore railway station is a very
+       convenient way of travel as daily trains ply here. Bus services are
+       also regularly running and finding a seat is never a problem.
+     </p>
+     <div class="row rounded justify-content-between">
+       <div class="col-md-6">
+         <div
+           class="map-card mb-3 border rounded d-flex align-items-center p-3"
+           data-aos="fade-right"
+           style="position: relative; overflow: hidden"
+         >
+           <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124739.88290221959!2d76.62950476936642!3d12.307614533614867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1712502935403!5m2!1sen!2sin"
+             width="100%"
+             height="100%"
+             style="
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               border: 0;
+             "
+             allowfullscreen=""
+             loading="lazy"
+             referrerpolicy="no-referrer-when-downgrade"
+           ></iframe>
+         </div>
+       </div>
+       <div class="col-md-6">
+         <div class="row">
+           <div
+             class="travel-cards col-md-5 mx-auto mb-3 rounded d-flex align-items-center p-3"
+             data-aos="fade-left"
+           >
+             <i class="fas fa-train fa-3x"></i>
+             Mysore Junction (MYS), also known as Mysuru Junction, is the
+             primary railway station in the city. Other stations include
+             Ashokapuram (AP).
+           </div>
+           <div
+             class="travel-cards col-md-5 mx-auto mb-3 rounded d-flex align-items-center p-3"
+             data-aos="fade-left"
+           >
+             Roadways are preferred for reaching Mysore. The city's main bus
+             gateway is Mysore City Bus Stand, with KSRTC Bus Stand serving
+             as the interstate terminal.
+           </div>
+         </div>
+         <div class="row">
+           <div
+             class="travel-cards col-md-5 mx-auto mb-3 rounded d-flex align-items-center p-3"
+             data-aos="fade-left"
+           >
+             Mysore Airport (MYQ) serves direct flights to cities including
+             Bangalore, Hyderabad, Chennai, Goa, and Kochis. Kempegowda
+             International Airport (BLR) serves as the nearest entry point
+             from other cities.
+           </div>
+           <div
+             class="travel-cards col-md-5 mx-auto mb-3 rounded d-flex align-items-center neon-colored p-3"
+             data-aos="fade-left"
+           ></div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div data-aos="fade-down" class="border rounded p-2 mb-4" id="places">
+     <center>
+       <div class="heading col-md-4 rounded">
+         <h3 class="p-2 m-4 d-flex justify-content-center">
+           PLACES TO VISIT IN MYSURU
+         </h3>
+       </div>
+     </center>
+     <!-- ======= place Section ======= -->
+     <section id="place" class="place section-bg">
+       <div class="container" data-aos="fade-up">
+         <div class="row">
+           <div
+             class="col-lg-12 d-flex justify-content-center"
+             data-aos="fade-up"
+             data-aos-delay="100"
+           >
+             <ul id="place-flters">
+               <li data-filter="*" class="filter-active">All</li>
+               <li data-filter=".filter-summer">summer</li>
+               <li data-filter=".filter-monsoon">monsoon</li>
+               <li data-filter=".filter-winter">winter</li>
+             </ul>
+           </div>
+         </div>
+         <div
+           class="row place-container"
+           data-aos="fade-up"
+           data-aos-delay="200"
+         >
+           <!-- Brindvan Garden -->
+           <div class="col-lg-4 col-md-6 place-item filter-monsoon">
+             <div class="place-wrap">
+               <img
+                 src="./img/Brindavan-Garden.avif"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Brindavan Gardens</h4>
+                 <a href="./places/Brindavan Gardens.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Chamundi hills -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/Chamundeshwari_Temple.jpg"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Chamundi Hills</h4>
+                 <a href="./places/Chamundi Hills.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Ranganathittu Bird Sanctuary -->
+           <div class="col-lg-4 col-md-6 place-item filter-monsoon">
+             <div class="place-wrap">
+               <img src="./img/ranganatittu.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Ranganathittu Bird Sanctuary</h4>
+                 <a href="./places/Ranganathittu Bird Sanctuary.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- GRS Fantasy Park -->
+           <div class="col-lg-4 col-md-6 place-item filter-summer">
+             <div class="place-wrap">
+               <img src="./img/grs.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>GRS Fantasy Park</h4>
+                 <a href="./places/GRS Fantasy Park.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Mysore Palace -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img src="./img/Mysore_Palace.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Mysore Palace</h4>
+                 <a href="./places/Mysore Palace.html"><h5>Read More</h5></a>
+               </div>
+             </div>
+           </div>
+           <!-- Karanji Lake -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img src="./img/Karanji.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Karanji Lake</h4>
+                 <a href="./places/Karanji Lake.html"><h5>Read More</h5></a>
+               </div>
+             </div>
+           </div>
+           <!-- ZOO -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img src="./img/zoo.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Sri Chamarajendra Zoological Gardens (Mysore Zoo)</h4>
+                 <a
+                   href="./places/Sri Chamarajendra Zoological Gardens (Mysore Zoo).html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Krishna Raja Sagara -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/mysore-krs-dam.webp"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Krishna Raja Sagara</h4>
+                 <a href="./places/Krishna Raja Sagara.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Lalitha Mahal -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/Lalitha-Mahal-Palace.jpg"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Lalitha Mahal</h4>
+                 <a href="./places/Lalitha Mahal.html"><h5>Read More</h5></a>
+               </div>
+             </div>
+           </div>
+           <!-- Jaganmohan Palace -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/Jaganmohan_Palace.JPG"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Jaganmohan Palace</h4>
+                 <a href="./places/Jaganmohan Palace.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- St. Philomena's Cathedral, Mysore -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/St._Philomena's_Church.jpg"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>St. Philomena's Cathedral</h4>
+                 <a href="./places/St. Philomena's Cathedral.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Srikanteshwara Temple, Nanjangud -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/Srikanteshvara_Temple.jpg"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Srikanteshwara Temple, Nanjangud</h4>
+                 <a href="./places/Srikanteshwara Temple, Nanjangud.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Shivanasamudra Falls -->
+           <div class="col-lg-4 col-md-6 place-item filter-monsoon">
+             <div class="place-wrap">
+               <img src="./img/Barahachukki.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Shivanasamudra Falls</h4>
+                 <a href="./places/Shivanasamudra Falls.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Railway Museum -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img
+                 src="./img/mysuru-railway-museum.jpg"
+                 class="img-fluid"
+                 alt=""
+               />
+               <div class="place-info">
+                 <h4>Railway Museum</h4>
+                 <a href="./places/Railway Museum.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+           <!-- Chennakeshava Temple, Somanathapura -->
+           <div
+             class="col-lg-4 col-md-6 place-item filter-monsoon filter-winter filter-summer"
+           >
+             <div class="place-wrap">
+               <img src="./img/Somanathapura.jpg" class="img-fluid" alt="" />
+               <div class="place-info">
+                 <h4>Chennakeshava Temple, Somanathapura</h4>
+                 <a href="./places/Chennakeshava Temple, Somanathapura.html"
+                   ><h5>Read More</h5></a
+                 >
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <!-- End place Section -->
+     <!--  -->
+   </div>
+ </div>
+
+</body>
+</html>
